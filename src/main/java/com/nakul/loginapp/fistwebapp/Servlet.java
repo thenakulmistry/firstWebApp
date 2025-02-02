@@ -32,7 +32,7 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String apiKey = "d74f4b4d5d106890e7c1f1beb5161141";
+        String apiKey = "";
         String city = request.getParameter("userInput");
 
         String apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" +city+ "&appid=" +apiKey;
